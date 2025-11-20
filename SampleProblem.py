@@ -6,12 +6,12 @@ from Problem import Problem
 from solvers.Chorin import ChorinSolver
 from solvers.NewtonSteady import NewtonSteadySolver
 
-domain = ms.generate_mesh(
+domain = ms.generate_mesh(                 # ms.generate_mesh(mesh_domain, mesh_density)
     ms.Rectangle(
         Point(0.0, 0.0),
         Point(2.2, 0.41))
     -
-    ms.Circle(Point(0.2, 0.2), 0.05), 35)
+    ms.Circle(Point(0.2, 0.2), 0.05), 35)  
 
 ics = []
 bcs = [
